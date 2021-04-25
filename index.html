@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Declaração de Conteúdo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/base.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm titulo">
+                <h1>Declaração de Conteúdo</h1>        
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row remetente_destinatario">
+            <div class="col-6 remetente">
+                <h2>Remetente</h2>
+                <div class="row">
+                    <div class="col-sm nome">
+                        <span>Nome:</span> <input type="text" id="nome_remetente" placeholder="Nome Sobrenome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm endereco">
+                        <span>Endereço:</span> 
+                            <textarea name="" id="endereco_remetente" rows="3" placeholder="Endereço"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-9 cidade">
+                        <span>Cidade:</span> <input type="text" id="cidade_remetente" placeholder="Cidade">
+                    </div>
+                    <div class="col-3 uf">
+                        <span>UF:</span> <input type="text" id="uf_remetente" placeholder="UF">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-5 cep">
+                        <span>CEP:</span> <input type="text" id="cep_remetente" placeholder="00000-000">
+                    </div>
+                    <div class="col-7 cpf_cnpj">
+                        <span>CPF/CNPJ:</span> <input type="text" id="cpf-cnpj_remetente" placeholder="000.000.000-00">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-6 destinatario">
+                <h2>Destinatário</h2>
+                <div class="row">
+                    <div class="col-sm nome">
+                        <span>Nome:</span> <input type="text" id="nome_destinatario" placeholder="Nome Sobrenome">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm endereco">
+                        <span>Endereço:</span>
+                        <textarea name="" id="endereceo_destinatario" rows="3"></textarea>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-9 cidade">
+                        <span>Cidade:</span> <input type="text" id="cidade_destinatario" placeholder="Cidade">
+                    </div>
+                    <div class="col-3 uf">
+                        <span>UF:</span> <input type="text" id="uf_destinatario" placeholder="UF">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-5 cep">
+                        <span>CEP:</span> <input type="text" id="cep_destinatario" placeholder="00000-000">
+                    </div>
+                    <div class="col-7 cpf_cnpj">
+                        <span>CPF/CNPJ:</span> <input type="text" id="cpf-cnpj_desintatario" placeholder="000.000.000-00">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container identificacao_dos_bens">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Identificação dos Bens</h2>
+
+                <div class="row identificacao_cabecalho">
+                    <div class="col-1">
+                        <span>Item</span>
+                    </div>
+                    <div class="col-7">
+                        <span>Conteúdo</span>
+                    </div>
+                    <div class="col-2">
+                        <span>Quant.</span>
+                    </div>
+                    <div class="col-2">
+                        <span>Valor</span>
+                    </div>
+                </div>
+
+                <div id="lista_linhas">
+                <div class="row dados_item" id="item_1">
+                    <div class="col-1">
+                        <span>1</span>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" id="item_nome_1" placeholder="Nome do item">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="item_qnt_1" placeholder="0">
+                    </div>
+                    <div class="col-2">
+                        <span>R$</span> <input type="number" class="item_valor" id="item_valor_1" placeholder="000,00" >
+                    </div>
+                </div>
+
+                <div class="row dados_item" id="item_2">
+                    <div class="col-1">
+                        <span>2</span>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" id="item_nome_2" placeholder="Nome do item">
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="item_qnt_2" placeholder="0">
+                    </div>
+                    <div class="col-2">
+                        <span>R$</span> <input type="number" class="item_valor" id="item_valor_2" placeholder="000,00" >
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row adicionar_itens">
+                <div class="col-sm">
+                    <button onclick="adicionarLinha()">Adicionar Linhas</button>
+                </div>
+            </div>
+
+                <div class="row totais">
+                    <div class="col-8">
+                        <span>Totais</span>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" id="totais_qnt" placeholder="0">
+                    </div>
+                    <div class="col-2">
+                        <span>R$</span> <input type="number" class="item_valor" id="totais_valor" placeholder="000,00">
+                    </div>
+                </div>
+
+                <div class="row peso_total">
+                    <div class="col-8">
+                        <span>Peso Total (kg):</span>
+                    </div>
+                    <div class="col-4">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container declaracao_final">
+        <div class="row">
+            <div class="col-sm">
+                <h3>Declaração</h3>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Declaro que não me enquadro no conceito de contribuinte previsto no art. 4º da Lei Complementar nº 87/1996, uma vez que não realizo, com habitualidade ou em volume que caracterize intuito comercial, operações de circulação de mercadoria, ainda que se iniciem no exterior, ou estou dispensado da emissão da nota fiscal por força da legislação tributária vigente, responsabilizando-me, nos termos da lei e a quem de direito, por informações inverídicas</p>
+                        <p>Declaro ainda que não estou postando conteúdo inflamável, explosivo, causador de combustão espontânea, tóxico, corrosivo, gás ou qualquer outro conteúdo que constitua perigo, conforme o art. 13 da Lei Postal nº 6.538/78.</p>
+                    </div>
+                </div>
+
+                <div class="row assinaturas">
+                    <div class="col-3">
+                        <input type="text" id="assinatura_cidade"><span>,</span>
+                    </div>
+
+                    <div class="col-1">
+                        <input type="text" id="assinatura_dia"><span>de</span>
+                    </div>
+
+                    <div class="col-2">
+                        <input type="text" id="assinatura_mes"><span>de</span>
+                    </div>
+
+                    <div class="col-1">
+                        <input type="text" id="assinatura_ano">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" id="assinatura_assinatura">
+                    </div>
+                </div>
+                <div class="row subassinaturas">
+                    <div class="col-7">
+
+                    </div>
+                    <div class="col-5">
+                        <span>Assinatura do Declarante/Remetente</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container observacao">
+        <div class="row">
+            <div class="col-sm">
+                <h4>Observação:</h4>
+                <p>Constitui crime contra a ordem tributária suprimir ou reduzir tributo, ou contribuição social e qualquer acessório (Lei 8.137/90 Art. 1º, V).</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/adicionar_linhas.js"></script>
+        
+    
+
+</body>
+</html>
