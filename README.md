@@ -15,6 +15,9 @@ Eu precisava fazer dezenas de declarações de uma só vez, então acabei criand
 4. Preenchas as informações
 5. Imprima do navegador ou salve como PDF (maioria dos navegadores aceita Ctrl+P)
 
+
+## Resumo do Projeto
+
 O projeto está todo em 3 arquivos principais:
 - index.html contém o formulário
 - css/base.css usa como base o Boostrap 5 e adiciona classes simples e remove alguns elementos quando for imprimir
