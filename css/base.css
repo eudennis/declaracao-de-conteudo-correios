@@ -29,6 +29,12 @@
    .row.peso_total {
     border-top: 1px solid #000;
 }
+
+/* Remove a div de avisos para impressão */
+div.avisos {
+    display: none;
+}
+
 /* Remove os inputs quando imprime no Firefox */
 input[type=number] {
     -moz-appearance: textfield;
