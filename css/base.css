@@ -31,7 +31,7 @@
 }
 
 /* Remove a div de avisos para impressão */
-div.avisos {
+.avisos {
     display: none;
 }
 
