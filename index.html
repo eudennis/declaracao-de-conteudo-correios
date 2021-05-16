@@ -128,7 +128,7 @@
                         <span>1</span>
                     </div>
                     <div class="col-7">
-                        <input type="text" id="item_nome_1" placeholder="Nome do item">
+                        <input type="text" id="item_nome_1" placeholder="Descrição do Item">
                     </div>
                     <div class="col-2">
                         <input type="number" id="item_qnt_1" placeholder="0">
@@ -140,10 +140,11 @@
 
                 <div class="row dados_item" id="item_2">
                     <div class="col-1">
+                        <a onclick="apagarLinha('item_2')" class="btn-excluir">Excluir</a>
                         <span>2</span>
                     </div>
                     <div class="col-7">
-                        <input type="text" id="item_nome_2" placeholder="Nome do item">
+                        <input type="text" id="item_nome_2" placeholder="Descrição do Item">
                     </div>
                     <div class="col-2">
                         <input type="number" id="item_qnt_2" placeholder="0">
@@ -156,8 +157,11 @@
 
             </div>
             <div class="row adicionar_itens">
-                <div class="col-sm">
+                <div class="col-6">
                     <button onclick="adicionarLinha()">Adicionar Linhas</button>
+                </div>
+                <div class="col-6">
+                    <button onclick="imprimirDocumento()">Imprimir</button>
                 </div>
             </div>
 
@@ -240,7 +244,7 @@
         </div>
     </div>
 
-    <script src="js/adicionar_linhas.js"></script>
+    <script src="js/gerenciamento_linhas.js"></script>
         
     
 

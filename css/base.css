@@ -28,7 +28,10 @@
    }
    .row.peso_total {
     border-top: 1px solid #000;
-}
+    }
+    .btn-excluir {
+        display: none;
+    }
 
 /* Remove a div de avisos para impressão */
 .avisos {
@@ -321,4 +324,9 @@ body {
 .remetente_destinatario .destinatario {
     width: 49%;
     margin-left: 1%;
+}
+.btn-excluir {
+    color: red;
+    font-size: 10px;
+    text-decoration: none;
 }
